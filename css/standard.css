@@ -1,0 +1,236 @@
+        /* ------------------- */
+        /* Übergreifend / Body */
+        /* ------------------- */
+        /* linear-gradient(to right, #007FFF, #ff005d); */
+
+body, html {
+        backgroun-image: url();
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        }
+
+#kopfbereich {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: linear-gradient(130deg, #FF9044 20%, #FF4040 80%);
+        width: 100%;
+        height: 100px;
+        z-index: 2
+        }
+
+#kopfbereich p {
+        padding-top: 30px; 
+        padding-bottom: 0;
+        padding-left: 50px;
+        padding-right: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 26px;
+        color: white;
+}
+
+
+#navibereich {
+        position: fixed;
+        top: 100px;
+        left: 0;
+        /* border: 1px solid #ccc; */
+        background-color: #0D0E0F;
+        width: 200px;
+        min-height: 400px;
+        z-index: 2;
+        border-right: 2px solid #FF9044;
+        border-bottom: 2px solid #FF9044;
+        }
+
+#textbereich {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100px;
+        padding-left: 210px;
+        padding-right: 210px;
+        padding-top: 20px;
+        padding-bottom: 60px;
+        height: 100%;
+        overflow-y: auto;
+        background: rgb(26, 28, 33);
+        }
+
+        #textbereich code {background-color: #3C3E44; color: white; font-size: 80%;}
+        #textbereich a {color: #FF9044;}
+        #textbereich .external-link:after {content: '\00a0 \00a0 [externer Link]'; color: #75757A; font-size: 9px;}
+        #textbereich p {font-family: 'Montserrat', sans-serif; font-weight: 300; color: #FFF; font-size: 16px; }
+        #textbereich .title-textarea { font-family: 'Montserrat'; font-stretch: wider; letter-spacing: 5px; font-size: 18pt; font-weight: bold; text-transform: uppercase; text-align: center;}
+
+
+#newsbereich {
+        position: fixed;
+        right: 0px;
+        top: 100px;
+        background-color: #0D0E0F;
+        border-left: 2px solid #FF9044;
+        border-bottom: 2px solid #FF9044;
+        border-top: 2px solid #ff4040;
+        width: 200px;
+        min-height: 400px;
+        z-index: 2;
+        }
+
+        #newsbereich .news-headline { text-align: center; color: white; text-decoration: underline; font-weight: bold; }
+        #newsbereich .news-item     { color: white; list-style: none; font-style: italic; text-align: center; width: 90%; align-content: center;}
+
+#fussbereich {
+        position: fixed;
+        padding-bottom: 18px;
+        padding-top: 0.5px;
+        bottom: 0;
+        left: 0;
+        /* border: 1px solid #ccc; */
+        text-align: center;
+        font-family: 'Arial';
+        width: 100%;
+        background-color: rgba(0,0,0,0.3);
+        height: 50px;
+        z-index: 2;
+        }
+
+#fussbereich p {
+        font-family: 'Arial';
+        color: white;
+}
+
+
+
+        /* ------------------- */
+        /* M e n u f o r m a t */
+        /* ------------------- */
+
+#navibereich .nav {
+        text-align: right;
+        list-style-type: none;
+        margin: 20px 5px;
+}
+
+#navibereich .nav > li {
+        float: none;
+}
+
+#navibereich .nav > li > a {
+        text-transform: uppercase;
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        color: #FFF;
+        display: block;
+        transition: all 0.2s;
+        line-height: 35px;
+        text-decoration: none;
+        padding-right: 10px;
+}
+
+#navibereich .nav > li > a.active {
+        font-weight: 700;
+        text-shadow: 1px 1px black, 2px 2px white, 3px 3px black;
+        color: #FFF;
+}
+
+#navibereich .nav > li > a:hover {
+        font-weight: 700;
+        font-style: bold;
+        background: linear-gradient(130deg, #FF9044 20%, #FF4040 80%);
+        text-shadow: 1px 1px, grey, 2px 2px grey, 3px 3px grey;
+        color: #FFF;
+        transition: all 0.2s ease-out 0s;
+}
+
+#navibereich .nav > li > a:focus {
+        font-weight: 700;
+        font-style: italic;
+        text-shadow: 1px 1px, grey, 2px 2px grey, 3px 3px grey;
+        color: #FFF;
+        background: linear-gradient(130deg, #FF4040 20%, #FF9044 80%);
+        transform: background rotate(180deg);
+}
+
+
+        /* ------------------- */
+        /* Schriftformatierung */
+        /* ------------------- */
+
+/*
+p {
+        font-family: 'Lora', serif;
+        font-stlye: normal;
+        font-size: 11pt;
+        font-weight: normal;
+        color: #000000;
+        }
+*/
+
+::selection {
+        background-color: #ff9044;
+        color: #FFF;
+}
+
+.highlight-default {
+        background: linear-gradient(135deg, #21d4fd 1%, #b721ff 75%);
+        color: black;
+        padding-right: 5px;
+        padding-left: 5px;
+        border-radius: 5px;
+}
+
+.highlight-title {
+        background: linear-gradient(120deg, #f4ad42 1%, #FF483B 75%);
+        color: #1a1c21;
+        padding-right: 0px;
+        padding-left: 5px;
+        border-radius: 5px;
+        padding-bottom: 1px;
+        padding-top: 1px;
+        font-weight: bold;
+}
+
+.showcase {
+        margin: 10px 50px;
+        line-height: 35px;
+}
+
+.hr-text {
+    background-color: aqua;
+    height: 4px;
+    border: 0;
+    background-image: linear-gradient(to right, #FF9044, #FF4040);
+    border-radius: 6px;
+    width: 70%;
+}
+
+.countup {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.countup .timeel {
+  display: inline-block;
+  padding: 10px;
+  background: #151515;
+  margin: 0;
+  color: white;
+  min-width: 2.6rem;
+  margin-left: 13px;
+  border-radius: 10px 0 0 10px;
+}
+
+.countup span[class*="timeRef"] {
+  border-radius: 0 10px 10px 0;
+  margin-left: 0;
+  background: linear-gradient(to right, #FF9044, #FF4040);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: black;
+}
